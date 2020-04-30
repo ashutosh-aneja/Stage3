@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .bs-example {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+<span><img src="data:image/jpeg;base64,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"  style="width:7%;"><h2>Bootstrap Stage 3-Assignments</h2>
+</span>
+    </div>
+    
+    <div class="bs-example">
+        <ul class="nav nav-tabs">
+            <li class="active col-sm-2 ">
+                <a data-toggle="tab" href="#home"><strong>Home</strong></a>
+            </li>
+            <li class="col-sm-2 ">
+                <a data-toggle="tab" href="#handson"><strong>Hands On</strong></a>
+            </li>
+            <li class="col-sm-2 ">
+                <a data-toggle="tab" href="#practice"><strong>Practice Check</strong></a>
+            </li>
+            <li class="col-sm-2 ">
+                <a data-toggle="tab" href="#final"><strong>Final Check</strong></a>
+            </li>
+            <li class="col-sm-2 ">
+                <a data-toggle="tab" href="#contact"><strong>Contact Us</strong></a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+               <h5>About Bootstrap</h5>
+                
+                <p>Bootstrap is a free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+Bootstrap also gives you the ability to easily create responsive designs</p>
+                <h5>Why use Bootstrap? </h5>
+                <p>
+<b>History:</b>Originally created by a designer and a developer at Twitter, Bootstrap has become one of the most popular front-end frameworks and open source projects in the world. Bootstrap was created at Twitter in mid-2010 by @mdo and @fat. Prior
+                    to being an open-sourced framework, Bootstrap was known as Twitter Blueprint. A few months into development, Twitter held its first Hack Week and the project exploded as developers of all skill levels jumped in without any external
+                    guidance. It served as the style guide for internal tools development at the company for over a year before its public release, and continues to do so today.<hr>
+<b>Easy to use:</b> Anybody with just basic knowledge of HTML and CSS can start using Bootstrap<br>
+<b>Responsive features:</b> Bootstrap's responsive CSS adjusts to phones, tablets, and desktops<br>
+<b>Mobile-first approach:</b> In Bootstrap, mobile-first styles are part of the core framework<br>
+<b>Browser compatibility:</b> Bootstrap 4 is compatible with all modern browsers (Chrome, Firefox, Internet Explorer 10+, Edge, Safari, and Opera)<br>
+</p><hr>
+            </div>
+            <div id="handson" class="tab-pane fade">
+                
+                <h5>
+                
+                   
+                      
+ <a href="handson/1.html" target="_blank" class="list-group-item list-group-item-action active"><div class="spinner-border text-success"></div>Hands on 1.</a>
+                     
+<a href="handson/2.html" target="_blank" class="list-group-item list-group-item-success"><div class="spinner-border text-warning"></div>Handson 2</a>
+  <a href="handson/3.html" target="_blank" class="list-group-item list-group-item-action active"><div class="spinner-border text-danger"></div>Handson 3</a>
+<a href="handson/4.html" target="_blank" class="list-group-item list-group-item-success"><div class="spinner-border text-success"></div>Handson 4</a>
+                         
+                        
+                            
+                        
+                            
+                        
+                
+                </h5>
+            </div>
+            <div id="practice" class="tab-pane fade">
+               
+                <div class="list-group"><h6>
+                      
+                            <a href="truYum-ui-template/menu-item-list-customer.html" target="_blank" class="list-group-item list-group-item-action active"><div class="spinner-grow text-danger"></div>TruYum</a>
+                        
+                            <a href="truYum-ui-template/menu-item-list-customer.html" target="_blank" class="list-group-item list-group-item-success"><div class="spinner-grow text-primary"></div>Customer</a>
+                        
+                            <a href="truYum-ui-template/menu-item-list-admin.html" target="_blank" class="list-group-item list-group-item-action active"><div class="spinner-grow text-success"></div>Admin</a>
+                        
+                            <a href="truYum-ui-template/edit-menu-item.html" target="_blank" class="list-group-item list-group-item-success"><div class="spinner-grow text-danger"></div>Edit Detail</a>
+                        
+               </h6> 
+               </div>
+   </div>
+                
+            
+            <div id="final" class="tab-pane fade">
+                
+                <h6>
+                     <a href="movie/movie.html" target="_blank" class="list-group-item list-group-item "><div class="spinner-grow text-danger"></div>Movie Savan</a>
+                        
+                            <a href="movie/movie.html" target="_blank" class="list-group-item list-group-item"><div class="spinner-grow text-primary"></div>Customer</a>
+                        
+                            <a href="movie/admin.html" target="_blank" class="list-group-item list-group-item "><div class="spinner-grow text-success"></div>Admin</a>
+                        
+                            <a href="movie/edit.html" target="_blank" class="list-group-item list-group-item"><div class="spinner-grow text-danger"></div>Edit Detail</a>
+                </h6>
+            </div>
+            <div id="contact" class="tab-pane fade">
+                <h3>Contact Us</h3>
+                
+                <h4>Personal Info.</h4>
+                <ul>
+                    <li>Name : Ashutosh Aneja</li>
+                    <li>Contact: 9568144111</li>
+                    <li>Email ID: ashuaneja27@gmail.com</li>
+                    <li>University: DIT University</li>
+                    <li>Hometown: saharanpur(UP)</li>
+                </ul>
+                <h4>Employee Info.</h4>
+                <ul>
+                    <li>Employee ID: 849422</li>
+                    <li>Employee Email: Ashutosh.Aneja@cognizant.com</li>
+                    <li>Joining Date: 13-January-2020</li>
+                    <li>Joining Location: Pune</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="position: fixed; left: 0; bottom: 0; width: 100%; background-color:#808080; border-radius: 10px; color: white; text-align: center; height:6%; ">
+         <p>Developed by Ashutosh Aneja&copy; 2020</p> Copyright:<div class="footer-copyright text-center py-3">
+           
+        </div>
+    </footer>
+</body>
+
+</html>
